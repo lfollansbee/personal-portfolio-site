@@ -5,18 +5,16 @@ body {
 .side-nav {
   min-width: 20%;
   max-width: 30%; }
+  .side-nav li {
+    display: flex;
+    justify-content: flex-start; }
+  .side-nav .userView .circle {
+    height: 7vw;
+    width: auto; }
 
 .center-pic {
   display: flex;
   justify-content: center; }
-
-.side-nav .userView .circle {
-  height: 7vw;
-  width: auto; }
-
-.side-nav li {
-  display: flex;
-  justify-content: flex-start; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Merienda', cursive;
@@ -35,5 +33,17 @@ h1, h2, h3, h4, h5, h6 {
     color: #eceff1; }
   #intro img {
     height: 15vw; }
+  #intro i {
+    color: white;
+    background-color: black;
+    padding: 1vw;
+    border-radius: 50%;
+    margin: 1vw 2vw; }
+  #intro .fa-linkedin {
+    background-color: #1a86bc; }
+  #intro .fa-github {
+    background-color: #343232; }
+  #intro .fa-envelope-o {
+    background-color: #e7584b; }
 
 /*# sourceMappingURL=main.css.map */
