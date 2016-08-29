@@ -40,4 +40,16 @@ h1, h2, h3, h4, h5, h6 {
   #skills .card li {
     margin-bottom: .5rem; }
 
+.nav-side li a {
+  vertical-align: top;
+  line-height: 2rem;
+  color: #2079c7; }
+  .nav-side li a i {
+    padding: 0 .5rem; }
+  .nav-side li a:hover {
+    background-color: #cfd8dc;
+    border-left: 1px solid #e7584b; }
+  .nav-side li a:active {
+    border-left: 2px solid #e7584b; }
+
 /*# sourceMappingURL=main.css.map */
