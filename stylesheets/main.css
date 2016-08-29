@@ -1,0 +1,39 @@
+@import "https://fonts.googleapis.com/css?family=Merienda";
+body {
+  background-color: #eceff1; }
+
+.side-nav {
+  min-width: 20%;
+  max-width: 30%; }
+
+.center-pic {
+  display: flex;
+  justify-content: center; }
+
+.side-nav .userView .circle {
+  height: 7vw;
+  width: auto; }
+
+.side-nav li {
+  display: flex;
+  justify-content: flex-start; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merienda', cursive;
+  color: #2079c7; }
+
+.menu {
+  color: #2079c7;
+  padding: 2px;
+  border: solid 1px #e57373;
+  margin: 3px; }
+
+#intro {
+  background-color: #2079c7;
+  color: #eceff1; }
+  #intro h3, #intro h5 {
+    color: #eceff1; }
+  #intro img {
+    height: 15vw; }
+
+/*# sourceMappingURL=main.css.map */
