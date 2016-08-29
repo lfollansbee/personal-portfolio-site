@@ -4,31 +4,16 @@ body {
   background-color: #eceff1;
   font-family: 'Merriweather Sans', sans-serif; }
 
-.side-nav {
-  min-width: 20%;
-  max-width: 30%; }
-  .side-nav li {
-    display: flex;
-    justify-content: flex-start; }
-    .side-nav li a {
-      width: 100%; }
-  .side-nav .userView .circle {
-    height: 7vw;
-    width: auto; }
-
-.center-pic {
-  display: flex;
-  justify-content: center; }
+.sideNav li {
+  padding: .5rem .5rem; }
+  .sideNav li a {
+    vertical-align: top; }
+    .sideNav li a i {
+      padding: 0 .5rem; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Merienda', cursive;
   color: #2079c7; }
-
-.menu {
-  color: #2079c7;
-  padding: 2px;
-  border: solid 1px #e57373;
-  margin: 3px; }
 
 #intro {
   background-color: #2079c7;
@@ -50,7 +35,9 @@ h1, h2, h3, h4, h5, h6 {
   #intro .fa-envelope-o {
     background-color: #e7584b; }
 
-.skills ul {
-  border-right: solid 1px #e57373; }
+#skills .card {
+  background-color: white; }
+  #skills .card li {
+    margin-bottom: .5rem; }
 
 /*# sourceMappingURL=main.css.map */
