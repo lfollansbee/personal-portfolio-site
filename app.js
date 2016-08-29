@@ -1,6 +1,4 @@
 $(document).ready(function(){
-  $('.parallax').parallax();
+  $('.tabs-wrapper .row').pushpin({ top: $('.tabs-wrapper').offset().top });
+  $('.scrollspy').scrollSpy();
 });
-
-// Initialize collapse button
-$(".button-collapse").sideNav();
