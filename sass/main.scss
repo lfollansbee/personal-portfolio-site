@@ -1,8 +1,12 @@
 @import 'https://fonts.googleapis.com/css?family=Merienda';
+@import 'https://fonts.googleapis.com/css?family=Merriweather+Sans';
+
 
 body{
   background-color: #eceff1;
   // blue-grey lighten-5
+  font-family: 'Merriweather Sans', sans-serif;
+
 }
 
 .side-nav{
@@ -11,6 +15,9 @@ body{
   li{
     display: flex;
     justify-content: flex-start;
+    a{
+      width: 100%;
+    }
   }
   .userView .circle{
     height: 7vw;
@@ -60,5 +67,12 @@ h1, h2, h3, h4, h5, h6{
   }
   .fa-envelope-o{
     background-color: hsl(5, 76%, 60%);
+  }
+}
+
+.skills{
+  ul{
+
+    border-right: solid 1px #e57373;  
   }
 }
