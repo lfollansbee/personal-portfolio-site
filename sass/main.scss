@@ -29,14 +29,17 @@ h1, h2, h3, h4, h5, h6{
     color: $lightbluegrey;
   }
   img{
-    height: 15vw;
+    width: 35%;
   }
   i{
     color: white;
     background-color: black;
-    padding: 1vw;
+    padding: 1rem;
     border-radius: 50%;
     margin: 1vw 2vw;
+    &:hover{
+      box-shadow: none;
+    }
   }
   .fa-linkedin{
     background-color: hsl(200, 76%, 42%);
@@ -53,6 +56,9 @@ h1, h2, h3, h4, h5, h6{
   background-color: white;
   li{
     margin-bottom: .5rem;
+  }
+  .personal{
+    color: $gmail-red;
   }
 }
 
@@ -71,5 +77,12 @@ h1, h2, h3, h4, h5, h6{
     &:active{
       border-left: 2px solid $gmail-red;
     }
+  }
+}
+
+.projects {
+  img{
+  width: 100%;
+  padding: 0;
   }
 }

@@ -21,13 +21,15 @@ h1, h2, h3, h4, h5, h6 {
   #intro h3, #intro h5 {
     color: #eceff1; }
   #intro img {
-    height: 15vw; }
+    width: 35%; }
   #intro i {
     color: white;
     background-color: black;
-    padding: 1vw;
+    padding: 1rem;
     border-radius: 50%;
     margin: 1vw 2vw; }
+    #intro i:hover {
+      box-shadow: none; }
   #intro .fa-linkedin {
     background-color: #1a86bc; }
   #intro .fa-github {
@@ -39,6 +41,8 @@ h1, h2, h3, h4, h5, h6 {
   background-color: white; }
   #skills .card li {
     margin-bottom: .5rem; }
+  #skills .card .personal {
+    color: #e7584b; }
 
 .nav-side li a {
   vertical-align: top;
@@ -51,5 +55,9 @@ h1, h2, h3, h4, h5, h6 {
     border-left: 1px solid #e7584b; }
   .nav-side li a:active {
     border-left: 2px solid #e7584b; }
+
+.projects img {
+  width: 100%;
+  padding: 0; }
 
 /*# sourceMappingURL=main.css.map */
