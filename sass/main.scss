@@ -82,7 +82,27 @@ h1, h2, h3, h4, h5, h6{
 
 .projects {
   img{
+    width: 100%;
+    margin: .5vw 0;
+  }
+}
+
+.project{
+  position: relative;
   width: 100%;
-  padding: 0;
+  p{
+    position: absolute;
+    bottom: 30%;
+    padding: 1em 0;
+    width: 93%;
+    font-size: 1em;
+    color: $transparent;
+  }
+  &:hover{
+    p{
+      background-color: $hover-dark-grey;
+      color: $lightbluegrey;
+      font-weight: bold;
+    }
   }
 }
