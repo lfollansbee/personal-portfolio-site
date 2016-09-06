@@ -1,10 +1,14 @@
-@import 'https://fonts.googleapis.com/css?family=Merienda';
-@import 'https://fonts.googleapis.com/css?family=Merriweather+Sans';
+@import 'fonts';
 @import 'colors';
 
 body{
   background-color: $lightbluegrey;
   font-family: 'Merriweather Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Merienda', cursive;
+  color: $blue;
 }
 
 .sideNav li{
@@ -15,11 +19,6 @@ body{
       padding: 0 .5rem;
     }
   }
-}
-
-h1, h2, h3, h4, h5, h6{
-  font-family: 'Merienda', cursive;
-  color: $blue;
 }
 
 #intro{
@@ -62,24 +61,6 @@ h1, h2, h3, h4, h5, h6{
   }
 }
 
-.nav-side{
-  li a{
-    vertical-align: top;
-    line-height: 2rem;
-    color: $blue;
-    i{
-      padding: 0 .5rem;
-    }
-    &:hover{
-      background-color: $hover-grey;
-      border-left: 1px solid $gmail-red;
-    }
-    &:active{
-      border-left: 2px solid $gmail-red;
-    }
-  }
-}
-
 .projects {
   img{
     width: 100%;
@@ -104,5 +85,54 @@ h1, h2, h3, h4, h5, h6{
       color: $lightbluegrey;
       font-weight: bold;
     }
+  }
+}
+
+.nav-side{
+  li a{
+    vertical-align: top;
+    line-height: 2rem;
+    color: $blue;
+    i{
+      padding: 0 .5rem;
+    }
+    &:hover{
+      background-color: $hover-grey;
+      border-left: 1px solid $gmail-red;
+    }
+    &:active{
+      border-left: 2px solid $gmail-red;
+    }
+  }
+}
+
+#edu{
+  .tab a{
+    color: $gmail-red;
+  }
+  .card{
+    background-color: white;
+    padding-bottom: 1em;
+    .card-title{
+      font-size: 1.5rem;
+      line-height: normal;
+    }
+    .details{
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    .dates{
+      font-size: 1.2rem;
+    }
+    .du{
+      height:10vw;
+    }
+    a{
+      color: currentColor;
+    }
+  }
+  .school{
+    display: flex;
+    justify-content: center;
   }
 }
