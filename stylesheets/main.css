@@ -1,5 +1,94 @@
 @import "https://fonts.googleapis.com/css?family=Merienda";
 @import "https://fonts.googleapis.com/css?family=Merriweather+Sans";
+.timeline {
+  position: relative; }
+  .timeline .timeline-event {
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+    .timeline .timeline-event .timeline-content {
+      position: relative;
+      width: calc(50% - 50px); }
+    .timeline .timeline-event::before {
+      display: block;
+      content: "";
+      width: 2px;
+      height: calc(50% - 65px);
+      position: absolute;
+      background: rgba(52, 50, 50, 0.7);
+      left: calc(50% - 1px);
+      top: 3em; }
+    .timeline .timeline-event::after {
+      display: block;
+      content: "";
+      width: 2px;
+      height: calc(50% - 20px);
+      position: absolute;
+      background: rgba(52, 50, 50, 0.7);
+      left: calc(50% - 1px);
+      top: calc(50% + 20px); }
+    .timeline .timeline-event:first-child::before, .timeline .timeline-event:last-child::after {
+      display: none; }
+
+.timeline .timeline-event:nth-child(even) .timeline-content {
+  margin-left: calc(50% + 50px); }
+
+.timeline .timeline-event:nth-child(odd) .timeline-content {
+  margin-left: 0; }
+
+.timeline-badge {
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: calc(50% - 20px);
+  right: calc(50% - 20px);
+  border-radius: 50%;
+  text-align: center;
+  cursor: default; }
+  .timeline-badge i {
+    font-size: 25px;
+    line-height: 40px; }
+
+.ix-icon {
+  background-color: #2079c7;
+  color: white; }
+
+.keystone-icon {
+  background-color: #e7584b;
+  color: white; }
+
+.yellowstone-icon {
+  background-color: #4caf50;
+  color: white; }
+
+.gov-icon {
+  background-color: #2079c7;
+  color: white; }
+
+@media (min-width: 700px) {
+  .timeline-event {
+    margin-bottom: -10em; } }
+@media (max-width: 700px) {
+  .timeline .timeline-event .timeline-content {
+    width: calc(100% - 70px); }
+
+  .timeline .timeline-event::before {
+    left: 19px;
+    height: calc(50% - 65px); }
+
+  .timeline .timeline-event::after {
+    left: 19px;
+    height: 60%; }
+
+  .timeline .timeline-event:nth-child(even) .timeline-content {
+    margin-left: 70px; }
+
+  .timeline .timeline-event:nth-child(odd) .timeline-content {
+    margin-left: 70px; }
+
+  .timeline .timeline-badge {
+    left: 0; } }
 body {
   background-color: #eceff1;
   font-family: 'Merriweather Sans', sans-serif; }
@@ -75,25 +164,38 @@ h1, h2, h3, h4, h5, h6 {
   .nav-side li a:active {
     border-left: 2px solid #e7584b; }
 
-#edu .tab a {
-  color: #e7584b; }
-#edu .card {
-  background-color: white;
-  padding-bottom: 1em; }
-  #edu .card .card-title {
-    font-size: 1.5rem;
-    line-height: normal; }
-  #edu .card .details {
-    font-weight: bold;
-    font-size: 1.2rem; }
-  #edu .card .dates {
-    font-size: 1.2rem; }
-  #edu .card .du {
-    height: 10vw; }
-  #edu .card a {
-    color: currentColor; }
-#edu .school {
-  display: flex;
-  justify-content: center; }
+#edu {
+  margin-top: 6rem; }
+  #edu .tab a {
+    color: #e7584b; }
+  #edu .card {
+    background-color: white;
+    padding-bottom: 1em; }
+    #edu .card .card-title {
+      font-size: 1.5rem;
+      line-height: normal; }
+    #edu .card .details {
+      font-weight: bold;
+      font-size: 1.2rem; }
+    #edu .card .dates {
+      font-size: 1.2rem; }
+    #edu .card .du {
+      height: 10vw; }
+    #edu .card a {
+      color: currentColor; }
+  #edu .school {
+    display: flex;
+    justify-content: center; }
+
+#exp .card-title {
+  font-size: 1.25rem;
+  line-height: normal; }
+#exp a {
+  color: currentColor; }
+#exp .details {
+  font-weight: bold;
+  padding: .5rem 0; }
+#exp .dates {
+  padding-bottom: .5rem; }
 
 /*# sourceMappingURL=main.css.map */

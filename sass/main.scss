@@ -1,5 +1,6 @@
 @import 'fonts';
 @import 'colors';
+@import 'timeline';
 
 body{
   background-color: $lightbluegrey;
@@ -107,6 +108,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 #edu{
+  margin-top: 6rem;
   .tab a{
     color: $gmail-red;
   }
@@ -134,5 +136,22 @@ h1, h2, h3, h4, h5, h6{
   .school{
     display: flex;
     justify-content: center;
+  }
+}
+
+#exp{
+  .card-title{
+    font-size: 1.25rem;
+    line-height: normal;
+  }
+  a{
+    color: currentColor;
+  }
+  .details{
+    font-weight: bold;
+    padding: .5rem 0;
+  }
+  .dates{
+    padding-bottom: .5rem;
   }
 }
