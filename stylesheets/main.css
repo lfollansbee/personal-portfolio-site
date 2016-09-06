@@ -133,46 +133,15 @@ header {
   #intro .fa-envelope-o {
     background-color: #e7584b; }
 
+#about .card-action a {
+  color: #e7584b; }
+
 #skills .card {
   background-color: white; }
   #skills .card li {
     margin-bottom: .5rem; }
   #skills .card .personal {
     color: #e7584b; }
-
-.projects img {
-  width: 100%;
-  margin: .5vw 0; }
-
-.project {
-  position: relative;
-  width: 100%; }
-  .project p {
-    position: absolute;
-    bottom: 30%;
-    padding: 1em 0;
-    width: 93%;
-    font-size: 1em;
-    color: rgba(236, 239, 241, 0); }
-  .project:hover p {
-    background-color: rgba(52, 50, 50, 0.7);
-    color: #eceff1;
-    font-weight: bold; }
-
-.nav-side {
-  background-color: rgba(236, 239, 241, 0.6);
-  padding: 1em 2em 1em 1em; }
-  .nav-side li a {
-    vertical-align: top;
-    line-height: 2rem;
-    color: #2079c7; }
-    .nav-side li a i {
-      padding: 0 .5rem; }
-    .nav-side li a:hover {
-      background-color: #cfd8dc;
-      border-left: 1px solid #e7584b; }
-    .nav-side li a:active {
-      border-left: 2px solid #e7584b; }
 
 #edu {
   margin-top: 6rem; }
@@ -207,5 +176,39 @@ header {
   padding: .5rem 0; }
 #exp .dates {
   padding-bottom: .5rem; }
+
+.projects img {
+  width: 100%;
+  margin: .5vw 0; }
+
+.project {
+  position: relative;
+  width: 100%; }
+  .project p {
+    position: absolute;
+    bottom: 30%;
+    padding: 1em 0;
+    width: 93%;
+    font-size: 1em;
+    color: rgba(236, 239, 241, 0); }
+  .project:hover p {
+    background-color: rgba(52, 50, 50, 0.7);
+    color: #eceff1;
+    font-weight: bold; }
+
+.nav-side {
+  background-color: rgba(236, 239, 241, 0.6);
+  padding: 1em 2em 1em 1em; }
+  .nav-side li a {
+    vertical-align: top;
+    line-height: 2rem;
+    color: #2079c7; }
+    .nav-side li a i {
+      padding: 0 .5rem; }
+    .nav-side li a:hover {
+      background-color: #cfd8dc;
+      border-left: 1px solid #e7584b; }
+    .nav-side li a:active {
+      border-left: 2px solid #e7584b; }
 
 /*# sourceMappingURL=main.css.map */

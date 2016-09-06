@@ -3,3 +3,15 @@ $(document).ready(function(){
   $('.scrollspy').scrollSpy();
   $('ul.tabs').tabs();
 });
+
+
+console.log(`%c ________________________________________
+<     I find this amoosing.    >
+ ----------------------------------------
+ \\
+  \\   \\_\\_    _/_/
+   \\      \\__/
+          (oo)\_______
+          (__)\       )\\/\\
+              ||----w |
+              ||     ||`, "font-family: monospace; color: rgb(32, 121, 199);");

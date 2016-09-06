@@ -60,6 +60,11 @@ header{
   }
 }
 
+#about{
+  .card-action a{
+    color: $gmail-red;
+  }
+}
 
 #skills .card{
   background-color: white;
@@ -68,53 +73,6 @@ header{
   }
   .personal{
     color: $gmail-red;
-  }
-}
-
-.projects {
-  img{
-    width: 100%;
-    margin: .5vw 0;
-  }
-}
-
-.project{
-  position: relative;
-  width: 100%;
-  p{
-    position: absolute;
-    bottom: 30%;
-    padding: 1em 0;
-    width: 93%;
-    font-size: 1em;
-    color: $transparent;
-  }
-  &:hover{
-    p{
-      background-color: $hover-dark-grey;
-      color: $lightbluegrey;
-      font-weight: bold;
-    }
-  }
-}
-
-.nav-side{
-  background-color: rgba(236, 239, 241, .6);
-  padding: 1em 2em 1em 1em;
-  li a{
-    vertical-align: top;
-    line-height: 2rem;
-    color: $blue;
-    i{
-      padding: 0 .5rem;
-    }
-    &:hover{
-      background-color: $hover-grey;
-      border-left: 1px solid $gmail-red;
-    }
-    &:active{
-      border-left: 2px solid $gmail-red;
-    }
   }
 }
 
@@ -164,5 +122,52 @@ header{
   }
   .dates{
     padding-bottom: .5rem;
+  }
+}
+
+.projects {
+  img{
+    width: 100%;
+    margin: .5vw 0;
+  }
+}
+
+.project{
+  position: relative;
+  width: 100%;
+  p{
+    position: absolute;
+    bottom: 30%;
+    padding: 1em 0;
+    width: 93%;
+    font-size: 1em;
+    color: $transparent;
+  }
+  &:hover{
+    p{
+      background-color: $hover-dark-grey;
+      color: $lightbluegrey;
+      font-weight: bold;
+    }
+  }
+}
+
+.nav-side{
+  background-color: rgba(236, 239, 241, .6);
+  padding: 1em 2em 1em 1em;
+  li a{
+    vertical-align: top;
+    line-height: 2rem;
+    color: $blue;
+    i{
+      padding: 0 .5rem;
+    }
+    &:hover{
+      background-color: $hover-grey;
+      border-left: 1px solid $gmail-red;
+    }
+    &:active{
+      border-left: 2px solid $gmail-red;
+    }
   }
 }
