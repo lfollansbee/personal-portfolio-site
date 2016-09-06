@@ -12,14 +12,14 @@ h1, h2, h3, h4, h5, h6{
   color: $blue;
 }
 
-.sideNav li{
-  padding: .5rem .5rem;
-  a{
-    vertical-align: top;
-    i{
-      padding: 0 .5rem;
-    }
-  }
+header{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 370px;
+  background: url("../images/IMG_2544 (1).jpg") center center / cover no-repeat fixed;
+  background-position: center center;
+  margin-bottom: -20em;
 }
 
 #intro{
@@ -27,6 +27,14 @@ h1, h2, h3, h4, h5, h6{
   color: $lightbluegrey;
   h3,h5{
     color: $lightbluegrey;
+  }
+  @media (max-width: 700px) {
+    h3, h5{
+      font-size: 1.5rem;
+    }
+    img{
+      width:50%;
+    }
   }
   img{
     width: 35%;
@@ -51,6 +59,7 @@ h1, h2, h3, h4, h5, h6{
     background-color: $gmail-red;
   }
 }
+
 
 #skills .card{
   background-color: white;
@@ -90,6 +99,8 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .nav-side{
+  background-color: rgba(236, 239, 241, .6);
+  padding: 1em 2em 1em 1em;
   li a{
     vertical-align: top;
     line-height: 2rem;
