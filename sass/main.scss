@@ -152,6 +152,11 @@ header{
   }
 }
 
+#contact .card-content{
+  display: flex;
+  justify-content: space-between;
+}
+
 .nav-side{
   background-color: rgba(236, 239, 241, .6);
   padding: 1em 2em 1em 1em;
