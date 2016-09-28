@@ -25,6 +25,9 @@ console.log(`%c ________________________________________
       .state('home',{
         url: '/',
         views: {
+          'intro': {
+            templateUrl: '/templates/partials/intro.html'
+          },
           'about': {
             templateUrl: '/templates/partials/about.html'
           },

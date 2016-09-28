@@ -18,46 +18,13 @@
     <div class="container">
       <div class="row">
         <main class="col s12 m9 l10">
-
-          <!-- PICTURE AND INTRO SECTION -->
-          <section class="section">
-            <div class="row">
-              <div class="col s12 m12 l12 card" id="intro">
-                <h3 class="center">Lucy Follansbee</h3>
-                <h5 class="center">Full Stack Web Developer</h5>
-                <div class="center-align">
-                  <img class="circle responsive-img" src="images/img_0397 (1).jpg">
-                </div>
-                <h5 class="center">Denver, CO</h5>
-                <div class="icon-circles center col s12 m6 l6 offset-m3 offset-l3">
-                  <a href="https://www.linkedin.com/in/lfollansbee">
-                    <i class="fa fa-linkedin fa-lg z-depth-2" aria-hidden="true"></i>
-                  </a>
-                  <a href="https://github.com/lfollansbee">
-                    <i class="fa fa-github fa-lg z-depth-2" aria-hidden="true"></i>
-                  </a>
-                  <a href="#">
-                    <i class="fa fa-envelope-o fa-lg z-depth-2" aria-hidden="true"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- ABOUT ME SECTION -->
+          <div ui-view="intro" id="top"></div>
           <div ui-view="about" id="about"></div>
-          <!-- PROJECTS SECTION -->
           <div ui-view="projects" id="projects"></div>
-          <!-- SKILLS SECTION -->
           <div ui-view="skills" id="skills">   </div>
-          <!-- EXPERIENCE SECTION -->
           <div ui-view="experience" id="exp"></div>
-
-          <!-- EDUCATION SECTION -->
           <div ui-view="edu" id="edu"></div>
-
-          <!-- CONTACT SECTION -->
           <div ui-view="contact" id="contact"></div>
-          <!-- INTERESTS SECTION -->
           <div ui-view="interests" id="interests">
         </main>
 
@@ -65,6 +32,9 @@
         <div class="hide-on-small-only col m3 l2">
           <div class="section tabs-wrapper pin-top pinned pin-bottom">
             <ul class="nav-side">
+              <li>
+                <a href="#top" du-smooth-scroll du-scrollspy><i class="material-icons">arrow_upward</i><span>Top</span></a>
+              </li>
               <li>
                 <a href="#about" du-smooth-scroll du-scrollspy><i class="material-icons">person</i><span>About Me</span></a>
               </li>

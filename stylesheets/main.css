@@ -121,7 +121,7 @@ header {
   #intro img {
     width: 35%; }
   #intro i {
-    color: white;
+    color: #eceff1;
     background-color: black;
     padding: 1rem;
     border-radius: 50%;
@@ -209,9 +209,23 @@ header {
   .modal-content i:hover {
     box-shadow: none; }
 
-#contact .card-content {
+#contact section {
+  height: 100%;
+  margin: 1vh 0;
   display: flex;
-  justify-content: space-between; }
+  flex-direction: column;
+  justify-content: space-around; }
+#contact li {
+  color: #2079c7;
+  list-style: none; }
+#contact i {
+  color: #eceff1;
+  background-color: #2079c7;
+  padding: .5rem;
+  border-radius: 50%;
+  margin: 1vh 1vw; }
+  #contact i:hover {
+    box-shadow: none; }
 
 .nav-side {
   background-color: rgba(236, 239, 241, 0.6);
