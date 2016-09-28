@@ -1,8 +1,7 @@
 $(document).ready(function(){
   $('.tabs-wrapper .row').pushpin({ top: $('.tabs-wrapper').offset().top });
-  $('.scrollspy').scrollSpy();
+  // $('.scrollspy').scrollSpy();
   $('ul.tabs').tabs();
-  $('.modal-trigger').leanModal();
 });
 
 

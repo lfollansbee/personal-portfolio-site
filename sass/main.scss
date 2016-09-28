@@ -47,7 +47,7 @@ header{
     background-color: black;
     padding: 1rem;
     border-radius: 50%;
-    margin: 1vw 2vw;
+    margin: 2vh 2vw;
     &:hover{
       box-shadow: none;
     }
@@ -80,7 +80,7 @@ header{
 }
 
 #edu{
-  margin-top: 6rem;
+  margin-top: 20vh;
   .tab a{
     color: $gmail-red;
   }
@@ -99,7 +99,7 @@ header{
       font-size: 1.2rem;
     }
     .du{
-      height:10vw;
+      height:20vh;
     }
     a{
       color: currentColor;
@@ -131,7 +131,7 @@ header{
 .projects {
   img{
     width: 100%;
-    margin: .5vw 0;
+    margin: 1vh 0;
   }
 }
 

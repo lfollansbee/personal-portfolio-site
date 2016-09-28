@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="LucyApp">
   <head>
     <meta charset="utf-8">
     <title>Lucy Follansbee</title>
     <!-- Materialize icons and font awesome -->
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- Stylesheets -->
     <link type="text/css" rel="stylesheet" href="stylesheets/vendors/materialize.css"  media="screen,projection"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -43,311 +43,22 @@
               </div>
             </div>
           </section>
-
           <!-- ABOUT ME SECTION -->
-          <section class="section scrollspy" id="about">
-            <div class="row">
-              <h4 class="center-align">About Me</h4>
-              <div class="col m12 white card z-depth-1">
-                <div class="card-content">
-                  <p>I am a JavaScript Full Stack (MEAN) developer based in Denver, CO. With a B.A. in History from Denison University.  Prior to becoming a web developer, I was in marketing and sales development and had experience in customer service, outdoor education, and hospitality.  I made the decision to move into software development after recognizing my passion for problem solving.</p>
-                  <p><br>Through the Galvanize Full Stack Immersive program I've gained core competencies in: JavaScript, PostgreSQL, Node.js, Express, AngularJS 1.0, Knex.js, jQuery, and Mocha/Chai testing.</p>
-                  <p><br>Outside of software development I'm passionate about travel, family, and outdoor activities like skiing, hiking, and backpacking.</p>
-                </div>
-                <div class="card-action center">
-                  <!-- <a href="#">Download Resume</a> -->
-                  <a href="#contact">Contact Me</a>
-                </div>
-              </div>
-            </div>
-          </section>
-
+          <div ui-view="about" id="about"></div>
           <!-- PROJECTS SECTION -->
-          <section class="section scrollspy" id="projects">
-            <div class="row">
-              <div class="col s12 m12 l12">
-                <h4 class="center-align">Projects</h4>
-                <article class="row projects">
-                  <div class="col s6 m6 l4 project">
-                    <!-- <a href="https://cookbot.xyz/#/home" target="_blank">
-                      <img class="z-depth-2" src="images/CookBot.png">
-                      <p class="center">CookBot</p>
-                    </a> -->
-
-                    <!-- MODAL -->
-                    <a class="modal-trigger waves-effect waves-light" href="#cookBot-modal">
-                      <img class="z-depth-2" src="images/CookBot.png">
-                      <p class="center project-name">CookBot</p>
-                    </a>
-
-                    <!-- Modal Structure -->
-                    <div id="cookBot-modal" class="modal modal-fixed-footer">
-                      <div class="modal-content">
-                        <h4>CookBot<br>
-                        <small>Galvanize Capstone Project</small></h4>
-                        <p>CookBot is a fully decoupled app with access to thousands of recipes. Features include multiple search options and "Cooking Mode", where recipe instructions are read aloud and audio commands are recognized allowing users to easily navigate recipes, hands-free, while cooking.</p>
-                        <p>Built using: IBM Watson Text-to-Speech API, AngularJS, Node.js, Express, PostgreSQL, Knex.js, Sass, Spoonacular API</p>
-                        <a href="https://github.com/lfollansbee/CookBot_client_side" target="_blank">
-                          <i class="fa fa-github fa-lg" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://cookbot.xyz/#/home" target="_blank">
-                          <i class="fa fa-laptop fa-lg" aria-hidden="true"></i>
-                        </a>
-                      </div>
-                      <div class="modal-footer">
-                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
-                      </div>
-                    </div>
-
-                  </div>
-                  <div class="col s6 m6 l4 project">
-                    <a href="https://smart-home-1fcd9.firebaseapp.com/#/home" target="_blank">
-                      <img class="z-depth-2" src="images/SmartHome.png">
-                      <p class="center project-name">SmartHome</p>
-                    </a>
-                  </div>
-                  <div class="col s6 m6 l4 project">
-                    <a href="https://github.com/Happy-Tracker/App" target="_blank">
-                      <img class="z-depth-2" src="images/Happy Tracker.png">
-                      <p class="center project-name">Happy Tracker</p>
-                    </a>
-                  </div>
-                  <div class="col s6 m6 l4 project">
-                    <a href="https://cheesy-wine-pairs.firebaseapp.com/" target="_blank">
-                      <img class="z-depth-2" src="images/wine pairs.png">
-                      <p class="center project-name">Cheesy Wine Pairings</p>
-                    </a>
-                  </div>
-                  <div class="col s6 m6 l4 project">
-                    <a href="https://github.com/lfollansbee/galvanize-reads" target="_blank">
-                      <img class="z-depth-2" src="images/Galvanize Reads.png">
-                      <p class="center project-name">Galvanize Reads</p>
-                    </a>
-                  </div>
-                  <div class="col s6 m6 l4 project">
-                    <a href="https://github.com/lfollansbee/HP-CRUD-blog" target="_blank">
-                      <img class="z-depth-2" src="images/Leaky Cauldron.png">
-                      <p class="center project-name">The Leaky Cauldron</p>
-                    </a>
-                  </div>
-                  <div class="col s6 m6 l4 project">
-                    <img class="z-depth-2" src="images/Syllabusy.png">
-                    <p class="center project-name">Syllabusy</p>
-                  </div>
-                </article>
-              </div>
-            </div>
-          </section>
-
+          <div ui-view="projects" id="projects"></div>
           <!-- SKILLS SECTION -->
-          <section class="section scrollspy" id="skills">
-            <div class="row">
-              <h4 class="center-align header">Skills</h4>
-              <div class="col s12 m12 l12 card z-depth-1">
-                <div class="card-content">
-                  <article class="col s6 m3 l3">
-                    <p class="card-title center">Front End</p>
-                    <ul class="center">
-                      <li>HTML5</li>
-                      <li>CSS3</li>
-                      <li>Sass</li>
-                      <li>Javascript</li>
-                      <li>jQuery</li>
-                      <li>AngularJS</li>
-                    </ul>
-                  </article>
-                  <article class="col s6 m3 l3">
-                    <p class="card-title center">Back End</p>
-                    <ul class="center">
-                      <li>Node.js</li>
-                      <li>Express</li>
-                      <li>PostgreSQL</li>
-                      <li>Knex.js</li>
-                      <li>Handlebars</li>
-                      <li>MongoDB</li>
-                    </ul>
-                  </article>
-                  <article class="col s6 m3 l3">
-                    <p class="card-title center other">Other</p>
-                    <ul class="center">
-                      <li>Johnny-Five</li>
-                      <li>Bootstrap</li>
-                      <li>Materialize</li>
-                      <li>Mocha/Chai</li>
-                      <li>Git + Github</li>
-                      <li>Agile Project Management</li>
-                    </ul>
-                  </article>
-                  <article class="col s6 m3 l3 personal">
-                    <p class="card-title center">Personal</p>
-                    <ul class="center">
-                      <li>Teamwork</li>
-                      <li>Critical Thinking</li>
-                      <li>Research</li>
-                      <li>Writing</li>
-                      <li>Customer Service</li>
-                    </ul>
-                  </article>
-                </div>
-              </div>
-            </div>
-          </section>
-
+          <div ui-view="skills" id="skills">   </div>
           <!-- EXPERIENCE SECTION -->
-          <section class="section scrollspy" id="exp">
-            <div class="row">
-              <h4 class="center-align">Experience</h4>
-              <div class="timeline">
-                <article class="timeline-event">
-                  <div class="card timeline-content">
-                    <div class="card-content">
-                      <p class="card-title">Business Development Representative</p>
-                      <a href="http://www.implement-ix.com/"><p class="details">Implementix, Inc. - Wheat Ridge, CO</p></a>
-                      <p class="dates">2014 - 2016</p>
-                      <p>Single-handedly developed multiple automated email marketing campaigns. Conducted telephone pitches, and prepared presentations for prospective clients.</p>
-                    </div>
-                  </div>
-                  <div class="timeline-badge ix-icon"><i class="material-icons">work</i></div>
-                </article>
-                <article class="timeline-event">
-                  <div class="card timeline-content">
-                    <div class="card-content">
-                      <p class="card-title">Certified Ski Instructor</p>
-                      <a href="http://www.implement-ix.com/"><p class="details">Vail Resorts - Keystone, CO</p></a>
-                      <p class="dates">2013 - 2016</p>
-                      <p>For three consecutive seasons I provided quality ski instruction to groups and individuals in a safe and fun manner in both a part-time and full-time position. During my first season, I achieved my certification as a Professional Ski Instructor of America (PSIA) through an intensive three-day certification program.</p>
-                    </div>
-                  </div>
-                  <div class="timeline-badge keystone-icon"><i class="material-icons">landscape</i></div>
-                </article>
-                <article class="timeline-event">
-                  <div class="card timeline-content">
-                    <div class="card-content">
-                      <p class="card-title">Guest Service Agent</p>
-                      <a href="http://www.implement-ix.com/"><p class="details">Xanterra Parks &amp; Resorts, Inc. - Old Faithful, WY</p></a>
-                      <p class="dates">2013</p>
-                      <p>Registered and greeted visitors at check-in and check-out and tried to satisfy any request. Provided excellent guest service while acting as unofficial concierge to help guests plan activities throughout their stay at the Old Faithful Inn.</p>
-                    </div>
-                  </div>
-                  <div class="timeline-badge yellowstone-icon"><i class="material-icons">map</i></div>
-                </article>
-                <article class="timeline-event">
-                  <div class="card timeline-content">
-                    <div class="card-content">
-                      <p class="card-title">Intern</p>
-                      <a href="http://www.implement-ix.com/"><p class="details">U.S. Congressman Jim Cooper - Nashville, TN</p></a>
-                      <p class="dates">2012</p>
-                      <p>Assisted Tennessee’s Fifth Congressional District by analyzing proposed legislation, researching current issues and legislation, compiling research, drafting memos, composing writing samples, and responding to constituent calls and mailings.</p>
-                    </div>
-                  </div>
-                  <div class="timeline-badge gov-icon"><i class="material-icons">folder</i></div>
-                </article>
-              </div>
-
-            </div>
-          </section>
+          <div ui-view="experience" id="exp"></div>
 
           <!-- EDUCATION SECTION -->
-          <section class="section scrollspy" id="edu">
-            <div class="row">
-              <h4 class="center">Education</h4>
-              <ul class="tabs z-depth-1">
-                <li class="tab col s4 m4 l4">
-                  <a  class="active" href="#galvanize">Software Development</a>
-                </li>
-                <li class="tab col s4 m4 l4">
-                  <a href="#denison">Undergraduate</a>
-                </li>
-                <li class="tab col s4 m4 l4">
-                  <a href="#harpethhall">High School</a>
-                </li>
-              </ul>
-              <div id="galvanize">
-                <article class="card col s12 m12 l12">
-                  <div class="card-content">
-                    <div class="col s4 m4 l4 school">
-                      <a target="_blank" href="http://www.galvanize.com/courses/web-development/#.V84Nd5MrK9Y">
-                        <img class="responsive-img" src="images/galvanize-g.svg"/>
-                      </a>
-                    </div>
-                    <div class="col s8 m8 l8">
-                      <a target="_blank" href="http://www.galvanize.com/courses/web-development/#.V84Nd5MrK9Y"><p class="card-title">Galvanize Web Development Immersive</p></a>
-                      <p class="dates">April 2016 - September 2016</p>
-                      <p>Intensive program with 1000+ hours of coursework focused on the latest web technologies, TDD, and agile methods.</p>
-                    </div>
-                  </div>
-                </article>
-              </div>
-              <div id="denison">
-                <article class="card col s12 m12 l12">
-                  <div class="card-content">
-                    <div class="col s4 m4 l4 school">
-                      <a target="_blank" href="http://www.denison.edu/">
-                        <img class="du responsive-img" src="images/Denison_University.jpg"/>
-                      </a>
-                    </div>
-                    <div class="col s8 m8 l8">
-                      <a target="_blank" href="http://www.denison.edu/"><p class="card-title">Denison University</p></a>
-                      <p class="details">Bachelor of Arts (B.A.), History</p>
-                      <p class="dates">August 2009 - May 2013</p>
-                      <p>Graduated with honors. Member of Phi Alpha Theta (National History Honor Society), Delta Gamma Fraternity, and a recipient of the Alumni Award Scholarship.</p>
-                      <p class="dates">Varsity Basketball</p>
-                      <p>Committed approximately 20 hours per week to training, travelling, and competing while simultaneously maintaining a full course load and achieving excellent grades. Led the team in blocked shots for three consecutive seasons.</p>
-                    </div>
-                  </div>
-                </article>
-              </div>
-              <div id="harpethhall">
-                <article class="card col s12 m12 l12">
-                  <div class="card-content">
-                    <div class="col s4 m4 l4 school">
-                      <a target="_blank" href="https://www.harpethhall.org/"><img class="responsive-img logo" src="images/harpeth_hall.jpg"/></a>
-                    </div>
-                    <div class="col s8 m8 l8">
-                      <a target="_blank" href="https://www.harpethhall.org/"><p class="card-title">Harpeth Hall School</p></a>
-                      <p class="details">Nashville, TN</p>
-                      <p class="dates">August 2005 - May 2009</p>
-                      <p>Harpeth Hall School is a private college preparatory school for girls and young women in Nashville, Tennessee.</p>
-                    </div>
-                  </div>
-                </article>
-              </div>
-            </div>
-          </section>
-
-          <!-- INTERESTS SECTION -->
-          <section class="section scrollspy" id="interests">
-            <div class="row">
-              <div class="col m12">
-                <h4 class="center">Interests</h4>
-              </div>
-            </div>
-          </section>
+          <div ui-view="edu" id="edu"></div>
 
           <!-- CONTACT SECTION -->
-          <section class="section scrollspy" id="contact">
-            <div class="row">
-              <div class="col m12">
-                <h4 class="center">Contact</h4>
-                <div class="col m12 white card z-depth-1">
-                  <div class="card-content">
-                    <a href="https://www.linkedin.com/in/lfollansbee" target="_blank">
-                      <i class="fa fa-linkedin fa-lg" aria-hidden="true"></i> /in/LFollansbee
-                    </a>
-                    <a href="https://github.com/lfollansbee" target="_blank">
-                      <i class="fa fa-github fa-lg" aria-hidden="true"></i> /LFollansbee
-                    </a>
-                    <a href="mailto:lfollansbee@gmail.com" target="_top">
-                      <i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i> LFollansbee@gmail.com
-                    </a>
-                    <a href="https://drive.google.com/file/d/0B4IHzYN2cgrNbF9WSUY3UGZteXc/view?usp=sharing" target="_blank">
-                      <i class="fa fa-file-text-o fa-lg" aria-hidden="true"></i> Resume
-                    </a>
-                  </div> <!-- card-content -->
-                </div> <!-- card -->
-              </div>
-            </div>
-          </section>
+          <div ui-view="contact" id="contact"></div>
+          <!-- INTERESTS SECTION -->
+          <div ui-view="interests" id="interests">
         </main>
 
         <!-- PINNED SIDE NAV -->
@@ -355,25 +66,25 @@
           <div class="section tabs-wrapper pin-top pinned pin-bottom">
             <ul class="nav-side">
               <li>
-                <a href="#about"><i class="material-icons">person</i><span>About Me</span></a>
+                <a href="#about" du-smooth-scroll du-scrollspy><i class="material-icons">person</i><span>About Me</span></a>
               </li>
               <li>
-                <a href="#projects"><i class="material-icons">laptop_mac</i> Projects</a>
+                <a href="#projects" du-smooth-scroll du-scrollspy><i class="material-icons">laptop_mac</i> Projects</a>
               </li>
               <li>
-                <a href="#skills"><i class="material-icons">code</i> Skills</a>
+                <a href="#skills" du-smooth-scroll du-scrollspy><i class="material-icons">code</i> Skills</a>
               </li>
               <li>
-                <a href="#exp"><i class="material-icons">business_center</i> Experience</a>
+                <a href="#exp" du-smooth-scroll du-scrollspy><i class="material-icons">business_center</i> Experience</a>
               </li>
               <li>
-                <a href="#edu"><i class="material-icons">school</i> Education</a>
+                <a href="#edu" du-smooth-scroll du-scrollspy><i class="material-icons">school</i> Education</a>
               </li>
               <!-- <li>
-                <a href="#interests"><i class="material-icons">public</i> Interests</a>
+                <a href="#interests" du-smooth-scroll du-scrollspy><i class="material-icons">public</i> Interests</a>
               </li> -->
               <li>
-                <a href="#contact"><i class="material-icons">phone_iphone</i> Contact</a>
+                <a href="#contact" du-smooth-scroll du-scrollspy><i class="material-icons">phone_iphone</i> Contact</a>
               </li>
             </ul>
           </div>
@@ -382,9 +93,13 @@
       </div>
     </div>
     <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script type="text/javascript" src="app.js"></script>
-    <script type="text/javascript" src="app.js"></script>
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
+    <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
+    <!-- <script type="text/javascript" src="app.js"></script> -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="ng-js/angular-scroll.min.js"></script>
+    <script type="text/javascript" src="ng-js/app.js"></script>
+    <script type="text/javascript" src="ng-js/main-controller.js"></script>
   </body>
 </html>
