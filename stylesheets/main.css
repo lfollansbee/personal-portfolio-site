@@ -167,6 +167,8 @@ header {
   #edu .school {
     display: flex;
     justify-content: center; }
+  #edu .underline {
+    border-bottom: 3px solid #e7584b; }
 
 #exp .card-title {
   font-size: 1.25rem;

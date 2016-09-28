@@ -109,6 +109,9 @@ header{
     display: flex;
     justify-content: center;
   }
+  .underline{
+    border-bottom: 3px solid $gmail-red;
+  }
 }
 
 #exp{

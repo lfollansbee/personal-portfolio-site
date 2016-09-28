@@ -1,3 +1,15 @@
+console.log(`%c ________________________________________
+<     I find this amoosing.    >
+ ----------------------------------------
+ \\
+  \\   \\_\\_    _/_/
+   \\      \\__/
+          (oo)\_______
+          (__)\       )\\/\\
+              ||----w |
+              ||     ||`, "font-family: monospace; color: rgb(32, 121, 199);");
+
+
 (function(){
   angular
     .module('LucyApp', [
@@ -26,7 +38,8 @@
             templateUrl: '/templates/partials/experience.html'
           },
           'edu': {
-            templateUrl: '/templates/partials/edu.html'
+            templateUrl: '/templates/partials/edu.html',
+            controller: 'MainController'
           },
           'interests': {
             templateUrl: '/templates/partials/interests.html'
@@ -34,8 +47,7 @@
           'contact': {
             templateUrl: '/templates/partials/contact.html'
           }
-        },
-        controller: 'MainController'
+        }
       })
   });
 })();
