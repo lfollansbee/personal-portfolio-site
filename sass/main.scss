@@ -134,6 +134,7 @@ header{
 .projects {
   img{
     width: 100%;
+    height: auto;
     margin: 1vh 0;
   }
 }
@@ -145,7 +146,7 @@ header{
     position: absolute;
     bottom: 30%;
     padding: 1em 0;
-    width: 93%;
+    width: 95%;
     font-size: 1em;
     color: $transparent;
   }

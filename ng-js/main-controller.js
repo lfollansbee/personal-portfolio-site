@@ -16,7 +16,6 @@
         $scope.showHH = false;
       }
     }
-
     $scope.toDenison = function(){
       if($scope.showDenison === false){
         $scope.showGalvanize = false;
@@ -24,7 +23,6 @@
         $scope.showHH = false;
       }
     }
-
     $scope.toHH = function(){
       if($scope.showHH === false){
         $scope.showGalvanize = false;
